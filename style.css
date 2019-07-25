@@ -519,3 +519,25 @@ input:checked+.footer_button-black::before{
 
 }
 
+@media (max-width:570px) {
+    .white-card-visible {
+        position: absolute;
+        left:0%;
+        top: -350px;
+        height:400px;
+        width: 100%;
+        background: url(Image/card-white.svg) center/contain no-repeat;
+    }
+    #button-card-black:checked ~ .black-card-visible {
+        position: absolute;
+        left:0%;
+        top: -350px;
+        height:400px;
+        width: 100%;
+        background: url(Image/black.svg) center/contain no-repeat;
+    
+    }
+    .footer-card{
+        margin-top: 250px;
+    }
+}
