@@ -8,6 +8,7 @@ body {
     height: 100%;
     width:100%;
     font-family: Monserat, sans-serif;
+    list-style: none;
 }
 
 header {
@@ -426,7 +427,7 @@ footer {
 }
 
 .footer-container {
-    display: ;
+    display: flex;
 }
 
 .footer-card {
@@ -435,10 +436,11 @@ footer {
 }
 
 .footer-batton-card {
+
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 8px 0;
+    margin: 30px 0;
 }
 
 .footer-card h4 {
@@ -526,7 +528,7 @@ input:checked+.footer_button-black::before{
 
 .white-card-visible {
     position: absolute;
-    left:-40%;
+    left:-10%;
     top: -400px;
     height:470px;
     width: 550px;
@@ -535,7 +537,7 @@ input:checked+.footer_button-black::before{
 
 #button-card-black:checked ~ .black-card-visible {
     position: absolute;
-    left:-40%;
+    left:-10%;
     top: -400px;
     height:470px;
     width: 550px;
@@ -564,4 +566,61 @@ input:checked+.footer_button-black::before{
     .footer-card{
         margin-top: 250px;
     }
+}
+
+.footer-usd {
+    border-left:5px solid #5D88FC;
+    text-align: left;
+    margin: 30px;
+    list-style: inherit;
+}
+.footer-usd li:last-child{
+    padding-bottom: 0;
+}
+.footer-logo{
+    display: flex;
+    margin-bottom: 50px;
+}
+.footer-logo_text p{
+    max-width: 290px;
+    
+}
+.footer-logo_text {
+    padding-left: 35px;
+}
+h6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px; 
+    color: #3B3E5B;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left:80px;
+}
+.checkbox1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #7C7E92;
+}
+.checkbox2 {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 20px;
+    max-width: 432px;
+    letter-spacing: 0.15px;
+    color: #7C7E92;
+}
+a {
+    text-decoration: none;
+    color:#5D88FC;
 }

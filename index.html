@@ -30,6 +30,7 @@
         </header>
         <main>
             <section class="main-container-1">
+                    
                     <div class="container-1-content ">
                         <div class="content">
                             <h3>Откройте новые <br> возможности:</h3>
@@ -74,6 +75,7 @@
                             </ul>
                     </div>
                 </div>
+                
             </section>
         </main>
         <footer>
@@ -85,6 +87,7 @@
                     <h4>ВЫБЕРИТЕ ЦВЕТ ВАШЕЙ КАРТЫ</h4>
                     <div class="footer-batton-card">
                         <label>
+                            
                             <input type="radio" name="button-card" id="button-card-white" value="white" checked/>
                             <p  class="footer_button-white"></p>
                             <div class="white-card-visible"></div>
@@ -97,19 +100,37 @@
                     </div>
                     
                         <ul class="footer-usd">
-                            <li>Стоимость апрейда: 225 000 руб</li>
-                            <li></li>
+                            <li>Стоимость апрейда:
+                                <select name="kurs">
+                                    <option value="rub"> 225 000 руб</option>
+                                    <option value="usd">3 562 USD</option>
+                                    <option value="eur">3 200 EUR</option>
+                                </select>
+                            </li>
+                            <li> В стоимость пакета входит ваша личная карта</li>
                         </ul>
-                    
-
-
-                        
                     </form>
-                <div class="footer-social">
-                    <ul class="test">
-                        
-                    </ul>
-                </div>
+                    <form class="right">
+                        <div class="footer-logo">
+                            <img src="Image/Team.svg">
+                            <div class="footer-logo_text">
+                                <h6>TEAM</h5>
+                                <p>Тариф позволяет взаимодействовать с торгово-сервисными предприятиями от лица CITYLIFE</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <p class="checkbox1">Я соглашаюсь <a href="#"> с правилами использования <br> 
+                                программы CITYLIFE</a></p>
+                            
+                            <input type="checkbox" >
+                            <p class="checkbox2">Согласен с условиями политики 
+                                обработки моих персональных данных, а также даю 
+                                согласие на получение, сбор, хранение и 
+                                использование персональных сведений о себе</p>
+                        </div>
+                    </form>
+                    
             </section>
         </footer>
     </body>
