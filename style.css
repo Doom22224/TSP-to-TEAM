@@ -468,10 +468,6 @@ h5 {
     
 }
 
-
-
-
-
 input {
     display: none;
 }
@@ -491,7 +487,21 @@ input {
     width: 25px;
     height: 25px;
 }
-
+.checkbox .click {
+    display:flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+.click::before {
+    content:'';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    border: 1px solid #C2C3CC;
+    border-radius: 2px;
+    transform: .4s;
+    
+}
  .footer_button-black::before{
     content:'';
     position: absolute;
@@ -517,7 +527,13 @@ input {
     transition: .4s;
     z-index: 1;
 }
-
+.checkbox .click:hover{
+    background: rgba(93, 136, 252, 0.16);
+}
+input:checked+.click::before{
+    border: none;
+    background: url(Image/body.svg) center/contain no-repeat;
+}
 input:checked+.footer_button-white::before{
     transform: scale(1.5);
 }
@@ -529,7 +545,7 @@ input:checked+.footer_button-black::before{
 .white-card-visible {
     position: absolute;
     left:-10%;
-    top: -400px;
+    top: -430px;
     height:470px;
     width: 550px;
     background: url(Image/card-white.svg) center/contain no-repeat;
@@ -538,7 +554,7 @@ input:checked+.footer_button-black::before{
 #button-card-black:checked ~ .black-card-visible {
     position: absolute;
     left:-10%;
-    top: -400px;
+    top: -430px;
     height:470px;
     width: 550px;
     background: url(Image/black.svg) center/contain no-repeat;
@@ -587,6 +603,7 @@ input:checked+.footer_button-black::before{
 }
 .footer-logo_text {
     padding-left: 35px;
+    color: #7C7E92;
 }
 h6 {
     font-style: normal;
@@ -608,6 +625,8 @@ h6 {
     line-height: 24px;
     letter-spacing: 0.15px;
     color: #7C7E92;
+    padding-left:24px;
+    padding-bottom: 16px;
 }
 .checkbox2 {
     font-family: Montserrat,sans-serif;
@@ -615,12 +634,110 @@ h6 {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    padding: 10px 0 20px;
-    max-width: 432px;
+    padding: 0px 0 20px;
+    max-width: 430px;
     letter-spacing: 0.15px;
     color: #7C7E92;
+    padding-left:24px;
 }
 a {
     text-decoration: none;
     color:#5D88FC;
+}
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+.stat {
+    display: flex;
+    align-items: ;
+}
+
+.footer-upgrade{
+    margin-top: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background: linear-gradient(90deg, #6A56CA 0%, #21268C 100%);
+    box-shadow: 0px 8px 16px rgba(106, 86, 202, 0.3);
+    border-radius: 56px;
+}
+.footer-upgrade p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+@media (max-width:960px){
+    .footer-container{
+        flex-direction: column;
+        align-content: center;
+    }
+    .right{
+        margin:80px 0 ;
+
+    }
+}
+
+@media (max-width: 600px){
+    .footer-usd{
+        max-width: 230px;
+        margin:auto;
+    }
+    .footer-usd li:first-child{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+    }
+    .footer-usd li:last-child{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #7C7E92;
+    }
+    .checkbox1{
+        max-width: 280px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #7C7E92;
+    }
+    .checkbox2{
+        max-width: 270px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+    }
+    .checkbox {
+        margin: auto;
+    }
+    .footer-upgrade{
+        margin:auto;
+    }
+    .footer-logo_text{
+       
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .footer-logo_text p{
+        position: absolute;
+        top:90px;
+        left:0;
+        width: 296px;
+    }
+    .footer-logo{
+         position: relative;
+        align-items: center;
+        padding-bottom:70px;
+    }
+    .footer-logo img{
+        width:20%;
+    }
 }
