@@ -132,9 +132,9 @@ h3 {
 
 .container-1-content {
     padding: 5px;
-    height:429px ;
     margin-right: 20px;
     margin-bottom: 121px;
+    padding-top:120px;
     /* margin-left: 130px; */
     display: flex;
     }
@@ -203,7 +203,8 @@ ul {
         position: relative;
         display: flex;
         flex-wrap: wrap;
-
+        margin-bottom: 0;
+        padding-top: 0;
     }
 
     .main-container-1 .container-1_image {
@@ -219,25 +220,32 @@ ul {
     .content {
        margin-top: 350px;
        margin-left: 50px;
-       padding-bottom: 100px;
+       /* padding-bottom: 100px; */
     }
 
-    .container-1-content-right {
-        display: flex;
+    div.container-1-content-right {
+        margin:0;
         justify-content: center;
         flex-wrap: wrap;
-        padding-left: 50px;
-
     }
     .main-container-1 .container-1-content-right img {
-        margin-top: 250px;
+        /* margin-top: 250px; */
         padding-bottom: 50px;
         width: 100%;
         max-width: 534px;
 
     }
     .main-container-1 .content-right {
-        margin-right: 90px;
+        margin: 0px 0 0 50px;
+    }
+    .content-right p {
+        max-width:310px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h3{
+        font-size: 22px;
+        line-height: 28px;
     }
 }
 
@@ -255,7 +263,10 @@ ul {
 
 .container-1-content-right {
     display: flex;
-    margin-left: -100px;
+}
+
+.container-1-right_image{
+    margin: 10px;
 }
 
 .container-1-content-right img{
@@ -277,6 +288,7 @@ ul {
     letter-spacing: 0.5px;
     color: #3B3E5B;
     padding-bottom: 32px;
+    max-width: 400px;
 }
 
 @media (max-width: 876px){
@@ -289,6 +301,9 @@ ul {
         padding: 0 0 50px 70px;
         left:0;
         top: 0;
+    }
+    .container-2-info_table li.container-2_item:last-child{
+        padding-bottom: 0;
     }
     .container-2-info_table {
         display: flex;
@@ -317,6 +332,12 @@ ul {
         color:#fff;
         background: url(Image/Polygon.svg) center/  contain no-repeat;
     }
+    div.container-2-info{
+        margin: 0;
+    }
+    .main-container-2{
+        padding: 66px 0;
+    }
 
 }
 
@@ -332,6 +353,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 40px;
 }
 
 .container-2-content {
